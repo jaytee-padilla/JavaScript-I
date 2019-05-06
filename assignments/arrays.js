@@ -76,11 +76,12 @@ console.log(`The last car in the inventory is a ${inventory[inventory.length - 1
 
 // ==== Challenge 3 ====
 // The marketing team wants the car models listed alphabetically on the website. Sort all the car model names into alphabetical order and log the results in the console
-let carModels = [];
-inventory.forEach(function(element) {
-    carModels.push(element.car_model);
-});
-carModels.sort();
+// let carModels = [];
+// inventory.forEach(function(element) {
+//     carModels.push(element.car_model);
+// });
+// carModels.sort();
+const carModels = inventory.map(car => car.car_model);
 console.log(carModels);
 
 // ==== Challenge 4 ====
